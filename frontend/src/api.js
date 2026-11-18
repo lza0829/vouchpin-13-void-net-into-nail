@@ -22,6 +22,9 @@ export const api = {
   preview: (day) => req('/redeem/preview' + (day ? `?business_day=${encodeURIComponent(day)}` : '')),
   seal: (body) => req('/redeem/seal', { method: 'POST', body: JSON.stringify(body) }),
   batches: () => req('/batches'),
+  batchDetail: (id) => req(`/batches/${id}`),
   getDay: () => req('/settings/day'),
   setDay: (business_day) => req('/settings/day', { method: 'PUT', body: JSON.stringify({ business_day }) }),
+  getVoidPolicy: () => req('/settings/void-policy'),
+  setVoidPolicy: (void_policy) => req('/settings/void-policy', { method: 'PUT', body: JSON.stringify({ void_policy }) }),
 }

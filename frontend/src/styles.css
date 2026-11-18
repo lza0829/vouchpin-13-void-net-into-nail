@@ -124,6 +124,21 @@ button.ghost {
 }
 .tag.ok { background: rgba(47, 143, 107, 0.12); color: var(--ok); }
 .tag.warn { background: rgba(196, 59, 122, 0.12); color: var(--ticket); }
+.tag.bad { background: rgba(196, 92, 92, 0.14); color: var(--bad); }
+
+tr.neg td { background: rgba(196, 92, 92, 0.07); color: var(--bad); }
+.ticket-num { color: var(--ticket); font-weight: 600; }
+
+.policy-card {
+  flex: 1 1 22rem; padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  background: linear-gradient(180deg, #fbfcfe, #f3f6fa);
+  cursor: pointer;
+}
+.policy-card.on { border-color: var(--ticket); box-shadow: 0 0 0 1px var(--ticket) inset; }
+.policy-card .policy-head { display: flex; align-items: center; gap: 0.45rem; flex-direction: row; }
+.policy-card .policy-head input { min-width: 0; width: auto; }
+.policy-card small { color: var(--muted); line-height: 1.45; margin-top: 0.3rem; }
 
 @media (max-width: 720px) {
   .chip { min-width: 0; flex: 1 1 40%; border-radius: 0.75rem; }

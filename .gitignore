@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# 运行时数据
+data/
+*.db
+
+# Node / 前端
+node_modules/
+dist/
+.vite/
+.npm-cache/
